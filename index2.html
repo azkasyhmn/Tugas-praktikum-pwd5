@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mahasiswa</title>
+</head>
+<body>
+
+    <h2>Form Mahasiswa</h2>
+
+        <form>
+
+            <fieldset>
+                <legend>Data Mahasiswa</legend>
+
+                <label for="nama">Nama: </label>
+                <input type="text" name="nama"><br><br>
+
+                <label for="npm">NPM: </label>
+                <input type="text" name="npm"><br><br>
+
+                <label for="kelas">Kelas</label>
+                <select name="kelas" id="kls">
+                    <option value="">-</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select><br><br>
+
+                <label for="gender">Jenis Kelamin: </label>
+                <input type="radio" id="l" name="gender" value="LAKILAKI">Laki-Laki
+                
+                <input type="radio" id="p" name="gender" value="PEREMPUAN">Perempuan
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                
+                    <legend>Tempat Tinggal</legend>
+
+                    <label for="alamat">Alamat: </label><br><br>
+                    <textarea name="alamat" rows="10" cols="30"></textarea>
+                    <br><br>
+
+                
+                    <label for="kecamatan">Kecamatan: </label>
+                    <input type="text" name="kecamatan"><br><br>
+
+                    <label for="kabupaten">Kabupaten/Kotamadya: </label>
+                    <input type="text" name="kabupaten"><br><br>
+
+                    <label for="provinsi">Provinsi: </label>
+                    <input type="text" name="provinsi"><br><br>
+
+                    <label for="kodepos">Kode Pos: </label>
+                    <input type="text" name="kodepos"><br><br>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Lain-lainnya</legend>
+
+                <label for="bahasa-pemrograman">Bahasa Pemrograman: </label>
+                <input type="radio" id="bhspemrograman" name="program_language" value="C/C++">C/C++
+                <input type="radio" id="bhspemrograman" name="program_language" value="Go Lang">Go Lang
+                <input type="radio" id="bhspemrograman" name="program_language" value="Phyton">Phyton
+                <input type="radio" id="bhspemrograman" name="program_language" value="PHP">PHP <br>
+                <input type="radio" id="bhspemrograman" name="program_language" value="Javascript">Javascript
+                <input type="radio" id="bhspemrograman" name="program_language" value="Ruby">Ruby
+                <input type="radio" id="bhspemrograman" name="program_language" value="dll">Lainnya
+                <br><br>
+
+                <label for="kegiatan">Kegiatan: </label>
+                <input type="radio" id="activity" name="kegiatan" value="Organisasi-Kemahasiswaan">Organisasi Kemahasiswaan
+                <input type="radio" id="activity" name="kegiatan" value="Bidang-Olahraga">Bidang Olahraga
+                <input type="radio" id="activity" name="kegiatan" value="Organisasi-Luar-Kampus">Organisasi di Luar Kampus
+                <input type="radio" id="activity" name="kegiatan" value="Bidang-Seni">Bidang Seni
+                <input type="radio" id="activity" name="kegiatan" value="dll">Lainnya
+
+            </fieldset>
+
+            <button type="button">Reset</button>
+            <button type="button">Submit</button>
+        </form>
+
+    <br><br><br>
+
+</body>
+</html>
