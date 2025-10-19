@@ -1,0 +1,231 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+    line-height: 1.6;
+    background-color: #f6f7eb;
+
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #faf3dd;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: #faf3dd;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: #ffa69e;
+    padding: 10px 0;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 30px 0;
+    background-color: #f6f7eb;
+}
+
+section #home {
+    background-color: #fffef5;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 40px;
+}
+
+.kolom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    width: 100%;
+}
+
+#home h2 {
+    padding: 25px;
+    font-size: 50px;
+    color: #ffa69e;
+}
+
+.kolom article {
+    text-align: left;
+    background-color: #fffaf6;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    color: #f051b8;
+    border: 1.3px solid #ff7b72;
+}
+
+.kolom article h2 {
+    font-size: 36px;
+    color: #ff7b72;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kolom article p {
+    font-size: 18px;
+    color: #ff7b72;
+    line-height: 1.6;
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kolom aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kolom aside img {
+    border-radius: 50%;
+    max-width: 220px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #5e6472;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 50px;
+    background-color: #fffaf6;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-top: 50px;
+}
+
+.about-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+    color: #ff7b72;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.about-text p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.wrapper-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f6f7eb;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 50px;
+    background-color: #fffaf6;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.profile-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.profile-text {
+    max-width: 700px;
+}
+
+.profile-details,
+.profile-skills {
+    margin-bottom: 20px;
+}
+
+.profile-details h3,
+.profile-skills h3 {
+    color: #ff7b72;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.profile-details ul,
+.profile-skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-details ul li,
+.profile-skills ul li {
+    font-size: 16px;
+    color: #ff7b72;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.profile-details strong {
+    color: #ff7b72;
+}
