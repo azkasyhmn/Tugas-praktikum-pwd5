@@ -59,7 +59,9 @@ $data = $controller->index();
             color: #fff;
         }
     </style>
-    <h1>Daftar Makanan</h1>
+</head>
+<body>
+       <h1>Daftar Makanan</h1>
     <table border="1" cellpadding="8" cellspacing="0">
         <tr class="head">
             <td>No</td>
@@ -76,8 +78,6 @@ $data = $controller->index();
 
         <?php endwhile; ?>
     </table>
-</head>
-<body>
-    
 </body>
+
 </html>
