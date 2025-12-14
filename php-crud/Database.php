@@ -1,0 +1,47 @@
+<?php 
+
+class Database {
+    public $host = "localhost";
+    public $user = "root";
+    public $pass = "";
+    public $dbname = "crud";
+
+    public $conn;
+
+    function __construct() {
+        $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->dbname);
+        
+        // if ($this->conn->error) {
+        //     echo "Database tidak terhubung";
+        // } else {
+        //     echo "Database berhasil terhubung.";
+        // }
+    }
+
+    function tampilData(){
+        $data = mysqli_query($this->conn, "SELECT * FROM user");
+        $rows = mysqli_fetch_all($data, MYSQLI_ASSOC);
+
+        return $rows;
+    }
+
+    function tambahData($nama, $alamat, $nohp) {
+        mysqli_query($this->conn, "INSERT INTO user VALUES (NULL, '$nama', '$alamat', '$nohp')");
+    }
+
+    function edit($id) {
+        $data = mysqli_query($this->conn, "SELECT * FROM user WHERE id = '$id'");
+        $rows = mysqli_fetch_all($data, MYSQLI_ASSOC);
+
+        return $rows;
+    }
+
+    function updateData($id, $nama, $alamat, $nohp) {
+        mysqli_query($this->conn, "UPDATE `user` SET `nama` = '$nama', `alamat` = '$alamat', `no_hp` = '$nohp' WHERE `user`.`id` = '$id'");
+    }
+
+    function hapusData($id) {
+        mysqli_query($this->conn, "DELETE FROM `user` WHERE `user`.`id` = '$id'");
+    }
+}
+
